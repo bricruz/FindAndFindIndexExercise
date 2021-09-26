@@ -36,7 +36,7 @@ function removeUser(usersArray, username) {
     return user.username === username;
   })
   if (removeThis != -1) {
-    return usersArray.splice(removeThis, 1);
+    return usersArray.splice(removeThis, 1)[0];
   }
   else {
     return undefined;
